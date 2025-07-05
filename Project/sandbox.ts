@@ -1,22 +1,21 @@
 // String Variable
 const character = "neetu";
-console.log(character); // Output: neetu
+console.log(character); 
 
 //DOM Selection using querySelectorAll
 // This selects all input elements on the page
 const inputs = document.querySelectorAll("input");
-console.log(inputs); // NodeList of inputs
+console.log(inputs); 
 
 inputs.forEach((input) => {
   console.log(input); // Logs each input element
 });
 
-// Array of Numbers (Type Inferred)
-const arrayNumber = [1, 2, 3, 4, 5];
-arrayNumber.push(8); // OK
-console.log(arrayNumber); // [1, 2, 3, 4, 5, 8]
-
-// arrayNumber.push("sd");  Error: Argument of type 'string' is not assignable to parameter of type 'number'
+//  Number Variable
+let numbers: number[] = [1, 2, 3, 4, 5]; // Explicitly typed as number[]
+numbers.push(6); // add at last
+numbers.unshift(5) // add at first
+numbers.splice(2,0,25)// start index, delete count and added value
 
 //  Mixed Array
 let mixed = ["sd", 4, "s"]; // Type: (string | number)[]

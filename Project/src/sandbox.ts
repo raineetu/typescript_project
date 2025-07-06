@@ -82,3 +82,16 @@ const user1: User = {
   age: 20,
 };
 console.log(user1);
+
+
+//function in typescript
+let greetUser: Function;
+
+greetUser = () =>{
+  console.log("hello")
+}
+
+const add =(a:number, b:number, c?:number | string) =>{
+console.log(a+b)
+}
+add(5,7)
